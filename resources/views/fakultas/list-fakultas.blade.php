@@ -16,6 +16,10 @@
                 <td>{{$item->nama_fakultas}}</td>
                 <td>{{$item->nama_dekan}}</td>
                 <td>
+                    <a href="/fakultas/{{ $item->id}}/edit" class="btn btn-warning"></a>
+
+                    <a href="/fakultas/{{ $item->id}}" method="post"></a>
+                    
                     <a href="/fakultas/{{ $item->e}}" class="btn btn-warning">Edit</a>
                     <form action="/fakultas/{{ $item->id}}" method ="post">
                         @csrf
